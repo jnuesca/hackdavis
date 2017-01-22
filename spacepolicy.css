@@ -34,6 +34,13 @@ body {
   text-align: center;
 }
 
+ul {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+
 .decades {
   margin-top: 5px;
   line-height: 20px;
