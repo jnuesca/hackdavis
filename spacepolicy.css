@@ -1,5 +1,6 @@
 body {
-  background-color: black;
+  background-color: white;
+  font-family: Avenir;
 
 }
 
@@ -26,10 +27,11 @@ body {
 
 .fifties {
   margin-top: 0px;
+  line-height: 20px;
 }
 
 #fiftyheader {
-  margin-top: 0px;
+  margin-top: 20px;
   font-weight: bold;
   text-align: center;
 }
