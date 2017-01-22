@@ -6,19 +6,23 @@ body {
 }
 
 .bgheader {
-  width: 150%;
-  height: 200px;
   opacity: .5;
+  z-index: -1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .header {
   font-family: Avenir;
   text-align: center;
   position: absolute;
-  top: 12%;
+  top: 50%;
   left: 10%;
   right: 10%;
   color: white;
+  border: white solid 2px;
 }
 
 #subheader {
@@ -30,6 +34,7 @@ body {
   font-family: Avenir;
   text-align: center;
 }
+
 .decades {
   margin-top: 5px;
   line-height: 20px;
@@ -37,9 +42,57 @@ body {
   padding: 5px 15px 10px 15px;
   color: white;
   font-family: Avenir;
-
 }
 
+.year {
+  position: absolute;
+  color: white;
+  font-family: Avenir;
+  border: white solid 5px;
+  text-align: center;
+  left: 40%;
+  right: 40%;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 10px 10px 0px 10px;
+  z-index: 1;
+  width: 20%;
+}
+
+#year1 {
+  top: 920px;
+}
+
+#year2, #year3, #year4, #year5, #year6, #year7 {
+  top: 80px;
+}
+
+#year50, #year60, #year70, #year80, #year90, #year00 {
+  position: absolute;
+  top: -80px;
+}
+
+#fifties {
+  position: absolute;
+  top: 1050px;
+  height: 100%;
+  z-index: 1;
+}
+
+#sixties, #seventies, #eighties, #nineties, #present {
+  position: absolute;
+  top: 200px;
+  height: 100%;
+}
+
+.container50 {
+  margin-bottom: 0px;
+}
+
+.container60, .container70, .container80, .container90, .container00 {
+  position: relative;
+  /*top: -920px;*/
+}
 .event50acontainer {
   margin-bottom: -10px;
 }
@@ -68,9 +121,21 @@ body {
   font-family: Avenir;
   position: absolute;
   left: 25%;
+  z-index: 1;
 }
 
 .footimg {
   height: 200px;
-  width: 150%;
+  width: 100%;
+  opacity: .2;
+  z-index: -1;
+  position: absolute;
+}
+
+.footer {
+  font-family: Avenir;
+  font-size: 10px;
+  position: absolute;
+  bottom: -210px;
+  color: white;
 }

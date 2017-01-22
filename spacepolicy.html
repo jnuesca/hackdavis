@@ -1,27 +1,34 @@
 <DOCTYPE !html>
 <html>
-
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("testimg");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
-  </script>
-
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
     <title>Ace the Space Race</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -32,31 +39,41 @@
   <body>
     <div class="timeline">
       <ul class ="w3-navbar w3-black">
-        <li><a class="w3-hover-red"href="#">Home</a></li>
-        <li><a href="#">1950s</a></li>
-        <li><a href="#">1960s</a></li>
-        <li><a href="#">1970s</a></li>
-        <li><a href="#">1980s</a></li>
-        <li><a href="#">1990s</a></li>
-        <li><a href="#">2000s-present</a></li>
-        <li><a href="#">About Us</a></li>
-
+        <li><a class="w3-hover-blue"href="#">HOME</a></li>
+        <li><a href="#year50">1950s</a></li>
+        <li><a href="#year60">1960s</a></li>
+        <li><a href="#year70">1970s</a></li>
+        <li><a href="#year80">1980s</a></li>
+        <li><a href="#year90">1990s</a></li>
+        <li><a href="#year00">2000s-2010s</a></li>
+        <li><a href="#about">About Us</a></li>
     </div>
 
     <img src="spaceheader.jpg" class="img-responsive bgheader" />
     <div class="header">
-      <h1>The History of United States Space Policy</h1>
+      <h1><strong>The History of United States Space Policy</strong></h1>
       <p id="subheader"><em>1950s-present</em></p>
     </div>
 
 <!-- 1950-1959 -->
-    <div class="decades w3-row">
+    <div class="container50">
+    <img src="fifties.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year1">
+      <div id="year50"></div>
+      <p>1950</p>
+    </div>
+    <div class="decades w3-row" id="fifties">
       <h2 id="timeheader"><em>The Beginning of the Space Race</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
           <h2><strong>Sputnik</strong></h2>
           <p>October 4, 1957</p>
-          <p>This was the launch of the world's first artificial satellite into orbit by the Soviet Union. The satellite fell out of orbit and burned up in the atmosphere the next year, but marked the beginning of the space race.</p>
+          <p>The Soviet Union surprises the world and plunges Americans into
+            paranoia as the world’s first artificial satellite orbits the Earth.
+            Traveling at 29,000 kilometers per hour and traveling a total of 70
+            million kilometers, Sputnik represented the beginning of a new era
+            for American scientific policy and ignited a race between two global
+            superpowers that united the country in an effort to reach the stars.</p>
         </div>
         <div class="event50aa w3-container w3-quarter">
           <h2><strong>Test</strong></h2>
@@ -78,16 +95,22 @@
           <h2><strong>Test</strong></h2>
         </div>
       </div>
-      <div class="event50c"></div>
     </div>
+  </div>
 
 <!-- 1960-1969 -->
-    <div class="decades w3-row">
-      <h2 id="timeheader" class=""><em>The Beginning of the Space Race</em></h2>
+    <div class="container60">
+    <img src="sixties.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year2">
+      <div id="year60"></div>
+      <p>1960</p>
+    </div>
+    <div class="decades w3-row" id="sixties">
+      <h2 id="timeheader" class=""><em>A Nation Destined for Greatness</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
-          <h2><strong>Sputnik</strong></h2>
-          <p>October 4, 1957</p>
+          <h2><strong>The Space Race Begins</strong></h2>
+          <p>May 25, 1961</p>
           <p>This was the launch of the world's first artificial satellite into orbit by the Soviet Union. The satellite fell out of orbit and burned up in the atmosphere the next year, but marked the beginning of the space race.</p>
         </div>
         <div class="event50aa w3-container w3-quarter">
@@ -106,9 +129,16 @@
       </div>
       <div class="event50c"></div>
     </div>
+  </div>
 
 <!-- 1970-1979 -->
-    <div class="decades w3-row">
+    <div class="container70">
+    <img src="seventies.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year3">
+      <div id="year70"></div>
+      <p>1970</p>
+    </div>
+    <div class="decades w3-row" id="seventies">
       <h2 id="timeheader" class=""><em>The Beginning of the Space Race</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
@@ -132,9 +162,16 @@
       </div>
       <div class="event50c"></div>
     </div>
+  </div>
 
 <!-- 1980-1989 -->
-    <div class="decades w3-row">
+    <div class="container80">
+    <img src="eighties.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year4">
+      <div id="year80"></div>
+      <p>1980</p>
+    </div>
+    <div class="decades w3-row" id="eighties">
       <h2 id="timeheader" class=""><em>The Beginning of the Space Race</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
@@ -146,7 +183,6 @@
           <h2><strong>Test</strong></h2>
         </div>
       </div>
-
       <div class="event50bcontainer">
         <div class="event50b w3-container w3-threequarter">
           <h2><strong>National Aeronautics and Space Act of 1958</strong></h2>
@@ -160,7 +196,13 @@
     </div>
 
 <!-- 1990-1999 -->
-    <div class="decades w3-row">
+    <div class="container90">
+    <img src="nineties.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year5">
+      <div id="year90"></div>
+      <p>1990</p>
+    </div>
+    <div class="decades w3-row" id="nineties">
       <h2 id="timeheader" class=""><em>The Beginning of the Space Race</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
@@ -172,21 +214,27 @@
           <h2><strong>Test</strong></h2>
         </div>
       </div>
+      <div class="event50bcontainer">
+        <div class="event50b w3-container w3-threequarter">
+          <h2><strong>National Aeronautics and Space Act of 1958</strong></h2>
+          <p>July 29, 1958</p>
+        </div>
+        <div class="event50aa w3-container w3-quarter">
+          <h2><strong>Test</strong></h2>
+        </div>
+      </div>
+      <div class="event50c"></div>
+    </div>
+  </div>
 
 <!-- 2000s & beyond -->
-      <div class="event50bcontainer">
-        <div class="event50b w3-container w3-threequarter">
-          <h2><strong>National Aeronautics and Space Act of 1958</strong></h2>
-          <p>July 29, 1958</p>
-        </div>
-        <div class="event50aa w3-container w3-quarter">
-          <h2><strong>Test</strong></h2>
-        </div>
-      </div>
-      <div class="event50c"></div>
+    <div class="container00">
+    <img src="thousands.jpg" class="img-responsive bgheader" />
+    <div class="year" id="year6">
+      <div id="year00"></div>
+      <p>2000</p>
     </div>
-
-    <div class="decades w3-row">
+    <div class="decades w3-row" id="present">
       <h2 id="timeheader" class=""><em>The Beginning of the Space Race</em></h2>
       <div class="event50acontainer">
         <div class="event50a w3-container w3-threequarter">
@@ -210,8 +258,9 @@
       </div>
       <div class="event50c"></div>
     </div>
+  </div>
 
-  <div class="inputform w3-center">
+  <div class="inputform w3-center" id="about">
     <h2><strong>Get involved, make a difference.</strong></h2>
     <p><strong>Register your email address to get more information!<strong></p>
     <input type="text" placeholder="E-mail address" required />
@@ -219,9 +268,9 @@
   </div>
   <img src="spacefooter.jpg" class="img-responsive footimg" />
 
-    <div class="footer"></div>
+  <div class="footer w3-container w3-center">
+    <p>Coded within 24 hours at HackDavis 2017 in Davis, California.</p>
+  </div>
 
   </body>
-
-
 </html>
