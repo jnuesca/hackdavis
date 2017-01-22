@@ -1,9 +1,12 @@
-.inputform {
-  text-align: center;
-  background: rgba(224, 224, 224, 0.5);
-  margin: 10px 10px 10px 10px;
-  padding: 0px 0px 15px 0px;
-  border-radius: 10px;
+body {
+  background-color: black;
+
+}
+
+.bgheader {
+  width: 150%;
+  height: 200px;
+  opacity: .5;
 }
 
 .header {
@@ -16,19 +19,30 @@
   color: white;
 }
 
-.bgheader {
-    width: 150%;
-    height: 200px;
-    opacity: .5;
-}
-
 #subheader {
   margin-top: -10px;
   font-size: 20px;
 }
 
+.fifties {
+  margin-top: 0px;
+}
 
-body {
-  background-color: black;
+#fiftyheader {
+  margin-top: 0px;
+  font-weight: bold;
+  text-align: center;
+}
 
+.test1 {
+  margin-top: -10px;
+}
+
+
+.inputform {
+  text-align: center;
+  background: rgba(224, 224, 224, 0.5);
+  margin: 10px 10px 10px 10px;
+  padding: 0px 0px 15px 0px;
+  border-radius: 10px;
 }
