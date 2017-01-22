@@ -114,11 +114,11 @@ body {
   position: absolute;
   left: 25%;
   z-index: 1;
-  bottom: -400px;
+  top: 100%;
 }
 
 .footimg {
-  height: 500px;
+  height: 20%;
   width: 100%;
   opacity: .2;
   z-index: -1;
@@ -129,6 +129,6 @@ body {
   font-family: Avenir, 'Muli';
   font-size: 10px;
   position: absolute;
-  bottom: -500px;
+  bottom: -20%;
   color: white;
 }
