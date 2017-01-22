@@ -107,17 +107,18 @@ body {
   text-align: center;
   background: rgba(224, 224, 224, 0.5);
   margin-top: 25px;
-  padding: 15px 0px 15px 0px;
+  padding: 15px;
   width: 50%;
   border-radius: 10px;
   font-family: Avenir, 'Muli';
   position: absolute;
   left: 25%;
   z-index: 1;
+  bottom: -400px;
 }
 
 .footimg {
-  height: 200px;
+  height: 500px;
   width: 100%;
   opacity: .2;
   z-index: -1;
@@ -128,6 +129,6 @@ body {
   font-family: Avenir, 'Muli';
   font-size: 10px;
   position: absolute;
-  bottom: -210px;
+  bottom: -500px;
   color: white;
 }
