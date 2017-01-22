@@ -29,17 +29,18 @@ body {
   font-size: 20px;
 }
 
-.timeline {
-  font-family: Avenir, 'Muli';
-  text-align: center;
-}
-
 ul {
   position: fixed;
   top: 0;
   z-index: 5;
   width: 100%;
 }
+
+.timeline {
+  font-family: Avenir, 'Muli';
+  text-align: center;
+}
+
 
 .decades {
   margin-top: 5px;
