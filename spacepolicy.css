@@ -74,7 +74,7 @@ body {
 
 #fifties {
   position: absolute;
-  top: 1050px;
+  top: 1035px;
   height: 100%;
   z-index: 1;
 }
@@ -92,13 +92,6 @@ body {
 .container60, .container70, .container80, .container90, .container00 {
   position: relative;
   /*top: -920px;*/
-}
-.event50acontainer {
-  margin-bottom: -10px;
-}
-
-.event50a {
-  margin-left: 0px;
 }
 
 
