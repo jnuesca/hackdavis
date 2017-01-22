@@ -9,6 +9,17 @@
 .header {
   font-family: Avenir;
   text-align: center;
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  right: 10%;
+  color: white;
+}
+
+.bgheader {
+    width: 150%;
+    height: 200px;
+    opacity: .5;
 }
 
 #subheader {
@@ -18,6 +29,6 @@
 
 
 body {
-  background-color: gray;
+  background-color: black;
 
 }
