@@ -126,3 +126,8 @@ ul {
   bottom: -20%;
   color: white;
 }
+
+#resource {
+  box-shadow: 2px 1px rgba(256, 256, 256, 0.5);
+  z-index: 1;
+}
