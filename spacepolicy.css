@@ -66,11 +66,8 @@ ul {
   width: 20%;
 }
 
-#year1 {
-  top: 920px;
-}
 
-#year2, #year3, #year4, #year5, #year6, #year7 {
+#year1, #year2, #year3, #year4, #year5, #year6, #year7 {
   top: 80px;
 }
 
@@ -79,26 +76,14 @@ ul {
   top: -80px;
 }
 
-#fifties {
-  position: absolute;
-  top: 1035px;
-  height: 100%;
-  z-index: 1;
-}
-
-#sixties, #seventies, #eighties, #nineties, #present {
+#fifties, #sixties, #seventies, #eighties, #nineties, #present {
   position: absolute;
   top: 200px;
   height: 100%;
 }
 
-.container50 {
-  margin-bottom: 0px;
-}
-
-.container60, .container70, .container80, .container90, .container00 {
+.container50, .container60, .container70, .container80, .container90, .container00 {
   position: relative;
-  /*top: -920px;*/
 }
 
 
